@@ -29,7 +29,7 @@ Należy uzupełnić **connectionString** do zasobu Azure Storage.
 
 	static async Task Main(string[] args)
 			{
-				CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse("<connectionString>");
+				var connectionString = "<connectionString>";
 				
 ```
 
@@ -39,7 +39,7 @@ Aplikacja przyjmuje 2 argumenty:
 
 ```
 
-	-p\--path : ścieżka do bazowej lokalizacji eksportowanych plików
+	-o\--output : ścieżka do bazowej lokalizacji eksportowanych plików
 	-d\--date : dzień, z którego eksportowane są odczyty (dzień z zakresu ostatnich 7 dni)
  
 ```
